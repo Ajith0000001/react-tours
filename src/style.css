@@ -1,0 +1,117 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  margin: 3rem auto;
+}
+.loading {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20%;
+}
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+.underline {
+  width: 4rem;
+  height: 2px;
+  background-color: rgb(29, 190, 110);
+  margin: auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto 2rem;
+  gap: 10px;
+}
+.tour-image img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-container {
+  background-color: #ffffff;
+  margin: 2rem;
+  transition: all 0.5 linear;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 1rem;
+}
+.tour-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.tour-name {
+  font-weight: bold;
+}
+.tour-price {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.tour-button {
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  background-color: aqua;
+  border: transparent;
+  border-radius: 10px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.btn-show {
+  border: transparent;
+  color: rgb(9, 9, 182);
+  margin-left: 2px;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+.refresh {
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 10px;
+  background-color: rgb(112, 112, 161);
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+.ref {
+  margin: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: block;
+  }
+}
